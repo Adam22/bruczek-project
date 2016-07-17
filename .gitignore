@@ -2,6 +2,7 @@
 /wp-config.php
 /wp-content/uploads/*
 /nbproject/ 
+nbproject/
 /.idea/
 wp-content/themes/bruczek-theme/bower_components
 wp-content/themes/bruczek-theme/node_modules
