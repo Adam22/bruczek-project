@@ -25,26 +25,31 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bruczek-theme' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bruczek-theme' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+            <div class="container-fluid">
+                <div class="header-content-wrapper">
+                    <div class="row">
+                        <div class="col-phone-1 col-xs-3 col-sm-2 col-md-2">
+                            <div class="logo-wrapper">
+                                <?php bruczek_theme_the_custom_logo(); ?>
+                            </div>
+                        </div>
+                        <div class="col-phone-1 col-xs-5 col-sm-4 col-md-4">
+                            <div class="site-title-wrapper">
+                                <span class="site-title"><?php bloginfo( 'name' );?></span>
+                            </div>
+                        </div>
+                        <div class="col-phone-1 col-xs-4 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-2 col-lg-offset-4">
+                            <div class=" phone-number-wrapper">
+                                <span class="phone-number">+48 74 265 2525</span>
+                            </div>
+                        </div>
+                        <div class="col-phone-1 col-xs-12 col-sm-3 col-md-3 social-icons"></div>
+                    </div>
+                </div>
+            </div>
+            <nav id="site-navigation" class="main-navigation" role="navigation">			
+                    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+            </nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
