@@ -1,0 +1,18 @@
+{
+  "name": "bruczek-theme",
+  "description": "szablon strony bruczek.pl",
+  "main": "index.php",
+  "authors": [
+    "Adam Tumielewicz"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

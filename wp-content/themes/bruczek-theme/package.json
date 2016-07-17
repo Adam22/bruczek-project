@@ -1,0 +1,11 @@
+{
+  "name": "bruczek-theme",
+  "version": "1.0.0",
+  "description": "szablon strony bruczek.pl",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Tumielewicz",
+  "license": "ISC"
+}
