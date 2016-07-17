@@ -76,7 +76,7 @@ add_action( 'after_setup_theme', 'bruczek_theme_setup' );
  * @global int $content_width
  */
 function bruczek_theme_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'bruczek_theme_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'bruczek_theme_content_width', 1200 );
 }
 add_action( 'after_setup_theme', 'bruczek_theme_content_width', 0 );
 
@@ -113,6 +113,50 @@ function bruczek_theme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'bruczek_theme_scripts' );
+
+
+function bower_enqueue_assets() {
+
+    // bower:css
+    // endbower
+    
+    // bower:js
+    // endbower
+}
+add_action('wp_enqueue_scripts', 'bower_enqueue_assets');
+/**
+ * Add Custom logo support
+ */
+add_theme_support( 'custom-logo', array(
+    'height'      => 248,
+    'width'       => 248,
+    'flex-height' => true,
+    ) 
+);
+
+/**
+ * Filter the except length to 20 characters.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+/**
+ * Filter the excerpt "read more" string.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function wpdocs_excerpt_more( $more ) {
+    return '';
+}
+
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
 /**
  * Implement the Custom Header feature.
