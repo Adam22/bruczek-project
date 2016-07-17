@@ -1,0 +1,9 @@
+/wp-config.php
+/wp-config.php
+/wp-content/uploads/*
+/nbproject/ 
+/.idea/
+wp-content/themes/bruczek-theme/bower_components
+wp-content/themes/bruczek-theme/node_modules
+wp-content/themes/bruczek-theme/.sass-cache
+
