@@ -7378,6 +7378,237 @@ and open the template in the editor.
     Created on : Jul 17, 2016, 11:02:57 PM
     Author     : adam
 */
+#masthead {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+#masthead .main-navigation .navbar {
+  border-radius: 0;
+  margin-bottom: 1px;
+}
+
+.logo-wrapper img {
+  height: 120px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.header-content-wrapper {
+  position: relative;
+}
+
+.custom-logo-link {
+  width: 248px;
+  height: 264px;
+}
+.custom-logo-link img {
+  display: block;
+}
+
+.navbar.navbar-default {
+  border-radius: 0;
+  margin-bottom: 1px;
+  z-index: 1;
+}
+
+.navbar-toggle {
+  background-color: #2b2b2b;
+}
+
+.navbar-default {
+  background-color: #4D4D4D;
+  -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.75);
+  border: none;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  border-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:active {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #abaaaa;
+}
+
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #2b2b2b;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: #2b2b2b;
+}
+
+.menu_my_bootstrap_menu > li > a {
+  color: #fff;
+}
+
+.site-title-wrapper {
+  height: 120px;
+  display: table;
+}
+.site-title-wrapper .site-title {
+  display: table-cell;
+  vertical-align: bottom;
+  font-size: 30px;
+}
+
+.phone-number-wrapper {
+  height: 120px;
+  display: table;
+}
+.phone-number-wrapper .phone-number {
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .custom-logo-link, .social-icons, .header-phone-number {
+    margin: 0 auto;
+  }
+  .custom-logo-link img, .social-icons img, .header-phone-number img {
+    margin: 0 auto;
+  }
+
+  .logo-wrapper {
+    padding-top: 20px;
+  }
+
+  .navbar-default {
+    border-color: transparent;
+    border-color: #e7e7e7;
+  }
+
+  .social-icons .social-icon-wrapper {
+    margin: 0 auto;
+    width: 32%;
+  }
+
+  .header-phone-number > p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 543px) {
+  .site-title-wrapper {
+    display: block;
+    height: auto;
+  }
+  .site-title-wrapper .site-title {
+    font-size: 30px;
+    width: 210px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .phone-number-wrapper {
+    display: block;
+    height: auto;
+  }
+  .phone-number-wrapper .phone-number {
+    font-size: 15px;
+    width: 125px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .row .col-phone-1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .site-title-wrapper {
+    height: 120px;
+    display: table;
+  }
+  .site-title-wrapper .site-title {
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: 30px;
+  }
+
+  .phone-number-wrapper {
+    height: 120px;
+    display: table;
+  }
+  .phone-number-wrapper .phone-number {
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 543px) {
+  .phone-number-wrapper {
+    height: 120px;
+    display: table;
+  }
+  .phone-number-wrapper .phone-number {
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 543px) {
+  .site-title-wrapper {
+    display: block;
+    height: auto;
+  }
+  .site-title-wrapper .site-title {
+    font-size: 30px;
+    width: 210px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .phone-number-wrapper {
+    display: block;
+    height: auto;
+  }
+  .phone-number-wrapper .phone-number {
+    font-size: 15px;
+    width: 125px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-content-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .navbar-inner {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  .logo-wrapper img {
+    height: 120px;
+    width: auto;
+  }
+
+  .navbar-nav {
+    padding-left: 10%;
+  }
+}
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -7452,8 +7683,12 @@ a:focus {
   background-color: #1c1c1c;
 }
 
+.box-header {
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) {
-  #metaslider_37 .slides > li > img {
+  #metaslider_26 .slides > li > img {
     max-height: 500px;
   }
 
@@ -7505,11 +7740,6 @@ a:focus {
     padding-right: 5%;
   }
 }
-@media (min-width: 480px) and (max-width: 767px) {
-  .front-boxes-wrapper .front-box img {
-    margin: 0 calc((100% - 370px)/2);
-  }
-}
 @media (min-width: 480px) and (max-width: 768px) {
   .front-boxes-wrapper .front-box img {
     width: 370px;
@@ -7532,6 +7762,10 @@ a:focus {
   .metaslider .slides img {
     min-height: 260px;
   }
+}
+img.box-thumbnail {
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

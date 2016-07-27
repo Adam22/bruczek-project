@@ -66,8 +66,12 @@ a:focus{
 .light-gray{
   background-color: #1c1c1c;
 }
+.box-header {
+    text-align: center;
+}
+
 @media screen and (min-width: $screen-lg){
-  #metaslider_37 .slides > li > img{
+  #metaslider_26 .slides > li > img{
     max-height: 500px;
   }
   .content-wrapper{
@@ -102,16 +106,10 @@ a:focus{
 }
 
 @media screen and (max-width: $screen-sm){
-      .jumbotron-buttons{
-        margin-top: 0;
-        padding-right: 5%;
-      }
-  }
-
-@media (min-width: $screen-xs) and (max-width: 767px){
-      .front-boxes-wrapper .front-box img{
-        margin: 0 calc((100% - 370px)/2);
-      }
+    .jumbotron-buttons{
+      margin-top: 0;
+      padding-right: 5%;
+    }
   }
 
 @media (min-width: $screen-xs) and (max-width: $screen-sm){
@@ -135,3 +133,8 @@ a:focus{
     min-height: 260px;
   }
 }
+
+  img.box-thumbnail {
+      display: block;
+      margin: 0 auto;
+  }
