@@ -12,7 +12,7 @@
 <div class="container-fluid">
     <div class="row content-wrapper">
         <?php 
-            $front_box_args = array('cat' => 4);
+            $front_box_args = array('cat' => 4, 'posts_per_page' => 3);
             $front_box = new WP_Query($front_box_args);
         ?>    
         <?php
@@ -46,22 +46,27 @@
 </div>
 <div class="container-fluid">
     <div class="row content-wrapper">
+        <div class="front-article-wrapper">
         <?php 
-            $front_article_args = array('cat' => 5);
+            $front_article_args = array('cat' => 5, 'posts_per_page' => 1);
             $front_article = new WP_Query($front_article_args);
-            
+        ?>
+        <?php
             if ($front_article->have_posts()) :
                 while($front_article->have_posts()) : 
                     $front_article->the_post();
         ?>
-                    <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-mg-offset-1 col-md-10 col-lg-offset-1 col-lg-10 front-box">
-                        <?php the_title( '<h1 class="box-header">', '</h1>' ); ?>                        
-                        <div class='post-content'><?php the_content() ?></div>
-                        <?php the_post_thumbnail('medium', array('class' => 'img-responsive img-thumbnail')); ?>
+                    <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+                        <?php the_title( '<h1 class="article-header">', '</h1>' ); ?>
+                        <div class='post-content'><?php the_content() ?></div>                    
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+                        <?php the_post_thumbnail('front-page-box-thumb', array('class' => 'img-responsive img-thumbnail box-thumbnail')); ?>
                     </div>
                 <?php endwhile; else : ?>
                     <p><?php _e( 'Przepraszamy, brak wpisów.' ); ?></p>
         <?php endif; ?>
+        </div>
     </div>
 </div>
 <?php get_footer(); ?>

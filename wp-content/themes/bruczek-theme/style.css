@@ -7637,6 +7637,12 @@ a:focus {
 .box-header {
   border-bottom: 2px solid #75A631;
   padding-bottom: 10px;
+  text-align: center;
+}
+
+.article-header {
+  border-left: 4px solid #75A631;
+  padding-left: 15px;
 }
 
 .button-grey {
@@ -7683,8 +7689,15 @@ a:focus {
   background-color: #1c1c1c;
 }
 
-.box-header {
-  text-align: center;
+img.box-thumbnail {
+  display: block;
+  margin: 0 auto;
+}
+
+.front-article-wrapper {
+  float: left;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -7746,10 +7759,6 @@ a:focus {
     height: auto;
   }
 
-  .box-header {
-    text-align: center;
-  }
-
   .front-box p {
     padding: 0 10%;
   }
@@ -7762,10 +7771,6 @@ a:focus {
   .metaslider .slides img {
     min-height: 260px;
   }
-}
-img.box-thumbnail {
-  display: block;
-  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -37,6 +37,12 @@ a:focus{
 .box-header{
   border-bottom: 2px solid $box-border-color;
   padding-bottom: 10px;
+  text-align: center;
+}
+
+.article-header{
+    border-left: 4px solid $box-border-color;
+    padding-left: 15px;
 }
 
 .button-grey{
@@ -79,10 +85,15 @@ a:focus{
 .light-gray{
   background-color: #1c1c1c;
 }
-.box-header {
-    text-align: center;
+img.box-thumbnail {
+    display: block;
+    margin: 0 auto;
 }
-
+.front-article-wrapper{
+    float: left;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
 @media screen and (min-width: $screen-lg){
   #metaslider_26 .slides > li > img{
     max-height: 500px;
@@ -130,9 +141,6 @@ a:focus{
     width: 370px;
     height: auto;
   }
-  .box-header{
-    text-align: center;
-  }
   .front-box p {
     padding: 0 10%;
   }
@@ -146,8 +154,3 @@ a:focus{
     min-height: 260px;
   }
 }
-
-  img.box-thumbnail {
-      display: block;
-      margin: 0 auto;
-  }
