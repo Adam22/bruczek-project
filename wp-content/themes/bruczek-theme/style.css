@@ -7505,7 +7505,7 @@ and open the template in the editor.
     width: 32%;
   }
 
-  .header-phone-number > p {
+  .header-phone-number p {
     text-align: center;
     margin-top: 10px;
     font-size: 30px;
@@ -7735,6 +7735,10 @@ img.box-thumbnail {
   padding-bottom: 40px;
 }
 
+.front-article-wrapper div post-content p {
+  font-size: 17px;
+}
+
 @media screen and (min-width: 1200px) {
   #metaslider_26 .slides > li > img {
     max-height: 430px;
@@ -7784,6 +7788,14 @@ img.box-thumbnail {
   .banner > h1 {
     font-size: 36px;
   }
+
+  .front-box p {
+    font-size: 20px;
+  }
+
+  .front-article-wrapper post-content p {
+    font-size: 17px;
+  }
 }
 @media screen and (min-width: 768px) {
   .content-baner {
@@ -7826,6 +7838,14 @@ img.box-thumbnail {
   .banner > h1 {
     font-size: 36px;
   }
+
+  .front-box p {
+    font-size: 20px;
+  }
+
+  .front-article-wrapper post-content p {
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 480px) {
   .metaslider .slides img {
@@ -7834,6 +7854,10 @@ img.box-thumbnail {
 
   .banner > h1 {
     font-size: 36px;
+  }
+
+  .front-box p {
+    font-size: 17px;
   }
 }
 

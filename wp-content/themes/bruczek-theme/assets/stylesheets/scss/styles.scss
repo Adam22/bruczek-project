@@ -86,12 +86,15 @@ img.box-thumbnail {
     width: 98%;
     height: 260px;
     max-width: 360px
-    
+
 }
 .front-article-wrapper{
     float: left;
     padding-top: 25px;
     padding-bottom: 40px;
+}
+.front-article-wrapper div post-content p {
+    font-size: 17px;
 }
 @media screen and (min-width: $screen-lg){
     #metaslider_26 .slides > li > img{
@@ -127,6 +130,13 @@ img.box-thumbnail {
     .banner > h1 {
         font-size: 36px;        
     }
+    .front-box p{
+        font-size: 20px;
+    }
+    .front-article-wrapper post-content p {
+        font-size: 17px;
+    }
+
 }
 @media screen and (min-width: $screen-sm){
     .content-baner{
@@ -140,7 +150,7 @@ img.box-thumbnail {
         font-size: 36px;        
     }
     .banner{
-    padding: 30px 0;
+        padding: 30px 0;
     }
 }
 
@@ -165,6 +175,12 @@ img.box-thumbnail {
     .banner > h1 {
         font-size: 36px;        
     }
+    .front-box p{
+        font-size: 20px;
+    }
+    .front-article-wrapper post-content p {
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: $screen-xs){
@@ -173,5 +189,8 @@ img.box-thumbnail {
     }
     .banner > h1 {
         font-size: 36px;        
+    }
+    .front-box p{
+        font-size: 17px;
     }
 }
