@@ -14,17 +14,29 @@ and open the template in the editor.
 
 
 a:focus{
-  outline: 0px auto -webkit-focus-ring-color;
+    outline: 0px auto -webkit-focus-ring-color;
 }
-
+.banner{
+    padding: 40px 0;
+    background-image: url($jumbotron-background-image);
+    box-sizing: border-box
+}
+.text-baner{
+    min-width: 320px;
+    text-align: center;
+}
+.banner > h1{
+    color: white;
+}
 .content-wrapper {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .box-header{
-  border-bottom: 2px solid $box-border-color;
-  padding-bottom: 10px;
-  text-align: center;
+    border-bottom: 2px solid $box-border-color;
+    padding-bottom: 32px;
+    padding-left: 10px;    
+    text-align: left;
 }
 
 .article-header{
@@ -33,48 +45,48 @@ a:focus{
 }
 
 .button-grey{
-  background-color: #444444;
+    background-color: #444444;
 }
 .text-white{
-  color: #fff;
-}
-.content-baner{
-  float: left;
-  width: 100%;
+    color: #fff;
 }
 .jumbotron-buttons{
-  float: right;
-  margin-top: 35px;
-  > button{
     float: right;
-  }
+    margin-top: 35px;
+    > button{
+        float: right;
+    }
 }
 .jumbo-button{
-  margin: 5px 15px;
+    margin: 5px 15px;
 }
 .content-baner{
-  margin: 20px 0;
-  background: linear-gradient(
-                  rgba(102, 195, 0, 0.45),
-                  rgba(102, 195, 0, 0.45)
-  ), url($jumbotron-background-image);
-  min-height: 230px;
+    float: left;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin: 20px 0;
+    background: linear-gradient(
+        rgba(102, 195, 0, 0.45),
+        rgba(102, 195, 0, 0.45)
+        ), url($jumbotron-background-image);
+    min-height: 230px;
 }
 
 .front-boxes-wrapper .front-box img {
-  padding: 0;
-  border-radius: 0;
-  width: 98%;
-  margin: 4px;
-  max-height: 250px;
-  min-height: 250px;
+    padding: 0;
+    border-radius: 0;    
+    margin: 4px;
 }
 .light-gray{
-  background-color: #1c1c1c;
+    background-color: #1c1c1c;
 }
 img.box-thumbnail {
     display: block;
     margin: 0 auto;
+    width: 98%;
+    height: 260px;
+    max-width: 360px
+    
 }
 .front-article-wrapper{
     float: left;
@@ -82,62 +94,84 @@ img.box-thumbnail {
     padding-bottom: 40px;
 }
 @media screen and (min-width: $screen-lg){
-  #metaslider_26 .slides > li > img{
-    max-height: 500px;
-  }
-  .content-wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .jumbotron-content{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .front-boxes-wrapper {
-    @include make-row;
-  }
+    #metaslider_26 .slides > li > img{
+        max-height: 430px;
+    }
+    .content-wrapper{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .jumbotron-content{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .front-boxes-wrapper {
+        @include make-row;
+    }
+    .text-baner{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .banner > h1 {
+        font-size: 36px;        
+    }
 }
 @media screen and (min-width: $screen-md){
-  .content-baner{
-    float: left;
-    width: 100%;
-  }
-  .container-fluid .jumbotron{
-    border-radius: 0;
-  }
+    .content-baner{
+        float: left;
+        width: 100%;
+    }
+    .container-fluid .jumbotron{
+        border-radius: 0;
+    }
+    .banner > h1 {
+        font-size: 36px;        
+    }
 }
 @media screen and (min-width: $screen-sm){
-  .content-baner{
-    float: left;
-    width: 100%;
-  }
-  .container-fluid .jumbotron{
-    border-radius: 0;
-  }
+    .content-baner{
+        float: left;
+        width: 100%;
+    }
+    .container-fluid .jumbotron{
+        border-radius: 0;
+    }
+    .banner > h1 {
+        font-size: 36px;        
+    }
+    .banner{
+    padding: 30px 0;
+    }
 }
 
 @media screen and (max-width: $screen-sm){
     .jumbotron-buttons{
-      margin-top: 0;
-      padding-right: 5%;
+        margin-top: 0;
+        padding-right: 5%;
     }
-  }
+}
 
 @media (min-width: $screen-xs) and (max-width: $screen-sm){
-  .front-boxes-wrapper .front-box img{
-    width: 370px;
-    height: auto;
-  }
-  .front-box p {
-    padding: 0 10%;
-  }
-  .metaslider .slides img{
-    min-height: 310px;
-  }
+    .front-boxes-wrapper .front-box img{
+        width: 370px;
+        height: auto;
+    }
+    .front-box p {
+        padding: 0 10%;
+    }
+    .metaslider .slides img{
+        min-height: 310px;
+    }
+    .banner > h1 {
+        font-size: 36px;        
+    }
 }
 
 @media screen and (max-width: $screen-xs){
-  .metaslider .slides img{
-    min-height: 260px;
-  }
+    .metaslider .slides img{
+        min-height: 260px;
+    }
+    .banner > h1 {
+        font-size: 36px;        
+    }
 }

@@ -10,6 +10,9 @@
 <?php get_header(); ?>
 <?php if (is_home() || is_front_page()) { echo do_shortcode("[metaslider id=26]"); }?>
 <div class="container-fluid">
+    <div class="row jumbotron banner">
+        <h1 class="text-baner">Mamy dobrze poukładane</h1>
+    </div>
     <div class="row content-wrapper">
         <?php 
             $front_box_args = array('cat' => 4, 'posts_per_page' => 3);
@@ -22,7 +25,7 @@
         ?>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 front-box">
                         <?php the_title( '<h1 class="box-header">', '</h1>' ); ?>
-                        <?php the_post_thumbnail('front-page-box-thumb', array('class' => 'img-responsive img-thumbnail box-thumbnail')); ?>
+                        <?php the_post_thumbnail('front-page-box-thumb', array('class' => 'img-responsive box-thumbnail img-thumbnail')); ?>
                         <p><?php the_excerpt(); ?></p>
                     </div>
                 <?php endwhile; else : ?>
