@@ -78,6 +78,9 @@ a:focus{
 .jumbo-button{
     margin: 5px 15px;
     border: 0;
+    &:hover{
+        background-color: $active-menu-item;
+    }
 }
 .button-icon{
     padding-right: 12px;
@@ -89,8 +92,8 @@ a:focus{
     background-repeat: no-repeat;
     margin: 20px 0;
     background: linear-gradient(
-        rgba(102, 195, 0, 0.45),
-        rgba(102, 195, 0, 0.45)
+        rgba(67, 144, 9, 0.7),
+        rgba(67, 144, 9, 0.7)
         ), url($jumbotron-background-image);
     min-height: 230px;
 }
@@ -108,8 +111,8 @@ img.box-thumbnail {
     margin: 0 auto;
     width: 98%;
     height: 260px;
-    max-width: 360px
-
+    max-width: 360px;
+    border: 0;
 }
 .front-article-wrapper{
     float: left;

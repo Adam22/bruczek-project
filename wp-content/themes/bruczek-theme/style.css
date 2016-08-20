@@ -7425,7 +7425,7 @@ and open the template in the editor.
 
 .navbar-default .navbar-nav > .active > a {
   background-color: #2b2b2b;
-  color: #5B7351;
+  color: #669352;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -7439,7 +7439,7 @@ and open the template in the editor.
   color: #fff;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #5B7351;
+  color: #669352;
 }
 
 .navbar-default .navbar-nav > .active > a:focus {
@@ -7447,7 +7447,7 @@ and open the template in the editor.
 }
 .navbar-default .navbar-nav > .active > a:hover {
   background-color: #2b2b2b;
-  color: #5B7351;
+  color: #669352;
 }
 
 .menu_my_bootstrap_menu > li > a {
@@ -7702,6 +7702,9 @@ a:focus {
   margin: 5px 15px;
   border: 0;
 }
+.jumbo-button:hover {
+  background-color: #669352;
+}
 
 .button-icon {
   padding-right: 12px;
@@ -7713,7 +7716,7 @@ a:focus {
   width: 100%;
   background-repeat: no-repeat;
   margin: 20px 0;
-  background: linear-gradient(rgba(102, 195, 0, 0.45), rgba(102, 195, 0, 0.45)), url("http://napierala-bruk.pl/wp-content/uploads/2014/04/437214_kamni_bruschatka_mostovaya_6666x4944_www.GdeFon.ruaaa_.jpg");
+  background: linear-gradient(rgba(67, 144, 9, 0.7), rgba(67, 144, 9, 0.7)), url("http://napierala-bruk.pl/wp-content/uploads/2014/04/437214_kamni_bruschatka_mostovaya_6666x4944_www.GdeFon.ruaaa_.jpg");
   min-height: 230px;
 }
 
@@ -7733,6 +7736,7 @@ img.box-thumbnail {
   width: 98%;
   height: 260px;
   max-width: 360px;
+  border: 0;
 }
 
 .front-article-wrapper {
