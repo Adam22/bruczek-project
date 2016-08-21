@@ -7639,13 +7639,24 @@ and open the template in the editor.
 .trade-mark {
   padding-bottom: 6px;
   padding-top: 12px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: gray;
 }
 
-/*.footer-wrapper{
-    float: left;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}*/
+.footer-wrapper {
+  margin-top: 50px;
+  float: left;
+}
+
+.footer-heading {
+  margin-bottom: 25px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 a:focus {
   outline: 0px auto -webkit-focus-ring-color;
 }
@@ -7696,6 +7707,8 @@ a:focus {
 }
 .jumbotron-buttons > button {
   float: right;
+  height: 45px;
+  box-sizing: border-box;
 }
 
 .jumbo-button {
@@ -7704,6 +7717,7 @@ a:focus {
 }
 .jumbo-button:hover {
   background-color: #669352;
+  box-shadow: 0px 0px 0px 1px white;
 }
 
 .button-icon {
@@ -7784,6 +7798,10 @@ img.box-thumbnail {
   .banner > h1 {
     font-size: 36px;
   }
+
+  .front-box p {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 992px) {
   .content-baner {
@@ -7800,11 +7818,15 @@ img.box-thumbnail {
   }
 
   .front-box p {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .front-article-wrapper post-content p {
     font-size: 17px;
+  }
+
+  .front-article-wrapper div img {
+    margin-top: 35px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -7823,6 +7845,10 @@ img.box-thumbnail {
 
   .banner {
     padding: 30px 0;
+  }
+
+  .front-article-wrapper div img {
+    margin-top: 65px;
   }
 }
 @media screen and (max-width: 768px) {

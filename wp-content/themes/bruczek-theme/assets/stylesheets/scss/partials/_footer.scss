@@ -9,18 +9,26 @@ and open the template in the editor.
 */
 
 .site-footer{
-  background-color: #000000;
-  color: #fff;
-  width: 100%;
-  float: left;
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    float: left;
 }
 
 .trade-mark{
     padding-bottom: 6px;
-    padding-top: 12px
+    padding-top: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: gray;
 }
-/*.footer-wrapper{
+.footer-wrapper{
+    margin-top: 50px;
     float: left;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}*/
+}
+.footer-heading{
+    margin-bottom: 25px;
+}
+.bold{
+    font-weight: bold;
+}

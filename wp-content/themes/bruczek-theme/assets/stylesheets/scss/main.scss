@@ -73,6 +73,8 @@ a:focus{
     margin-top: 35px;
     > button{
         float: right;
+        height: 45px;
+        box-sizing: border-box
     }
 }
 .jumbo-button{
@@ -80,6 +82,7 @@ a:focus{
     border: 0;
     &:hover{
         background-color: $active-menu-item;
+        box-shadow: 0px 0px 0px 1px white;
     }
 }
 .button-icon{
@@ -144,6 +147,9 @@ img.box-thumbnail {
     .banner > h1 {
         font-size: 36px;        
     }
+        .front-box p{
+        font-size: 14px;
+    }
 }
 @media screen and (min-width: $screen-md){
     .content-baner{
@@ -157,12 +163,14 @@ img.box-thumbnail {
         font-size: 36px;        
     }
     .front-box p{
-        font-size: 20px;
+        font-size: 14px;
     }
     .front-article-wrapper post-content p {
         font-size: 17px;
     }
-
+    .front-article-wrapper div img{
+        margin-top: 35px;
+    }
 }
 @media screen and (min-width: $screen-sm){
     .content-baner{
@@ -177,6 +185,9 @@ img.box-thumbnail {
     }
     .banner{
         padding: 30px 0;
+    }
+    .front-article-wrapper div img{
+        margin-top: 65px;
     }
 }
 

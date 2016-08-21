@@ -15,18 +15,18 @@
         <div class="row content-wrapper">
             <div class="footer-wrapper">
                 <div class="col-md-3">
-                    <h6>Nasza siedziba:</h6>
-                    <p>www.bruczek.pl</p>
+                    <h3 class="footer-heading">Nasza siedziba:</h3>
+                    <p><span class="glyphicon glyphicon-map-marker phone-icon" aria-hidden="true"></span>www.bruczek.pl</p>
                     <p>ul. Kostki brukowej 123</p>
                     <p>22-361 Warszawa</p>
+                    <p><span class="glyphicon glyphicon-earphone phone-icon" aria-hidden="true"></span>123 123 3123</p>
                 </div>
                 <div class="col-md-3">
-                    <h6>Zapytaj o wycenę:</h6>
-                    <br>
-                    <p>Zostaw swoje zgłoszenie, a my skontaktujemy się z Tobą.</p>
+                    <h3 class="footer-heading">Zapytaj o wycenę:</h3>                    
+                    <p class="bold">Zostaw swoje zgłoszenie, a my skontaktujemy się z Tobą.</p>
                 </div>
-                <div class="col-md-offset-3 col-md-3">
-                    <h4>Znajdź nas w internecie:</h4>
+                <div class="col-md-offset-5 col-md-4">
+                    <h3 class="footer-heading">Znajdź nas w internecie:</h3>
                     <div class="social-icon-wrapper">
                     </div>
                 </div>
