@@ -21,14 +21,23 @@ and open the template in the editor.
     margin-top: 25px;
     margin-bottom: 25px;
     color: gray;
+    p{
+        text-align: center;
+    }
 }
 .footer-wrapper{
     margin-top: 50px;
+    margin-bottom: 50px;
     float: left;
+    width: 100%;
+    @include make-row;
 }
 .footer-heading{
     margin-bottom: 25px;
-}
+} 
 .bold{
     font-weight: bold;
+}
+.grey{
+    color: #918f8f;
 }

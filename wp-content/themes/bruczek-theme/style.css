@@ -7643,10 +7643,24 @@ and open the template in the editor.
   margin-bottom: 25px;
   color: gray;
 }
+.trade-mark p {
+  text-align: center;
+}
 
 .footer-wrapper {
   margin-top: 50px;
+  margin-bottom: 50px;
   float: left;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.footer-wrapper:before, .footer-wrapper:after {
+  content: " ";
+  display: table;
+}
+.footer-wrapper:after {
+  clear: both;
 }
 
 .footer-heading {
@@ -7655,6 +7669,10 @@ and open the template in the editor.
 
 .bold {
   font-weight: bold;
+}
+
+.grey {
+  color: #918f8f;
 }
 
 a:focus {
