@@ -37,9 +37,8 @@
                         </div>
                     </div>
                     <div class="col-phone-1 col-xs-4 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
-                        <div class=" phone-number-wrapper">
-                            <span class="glyphicon glyphicon-earphone phone-icon" aria-hidden="true"></span>
-                            <span class="phone-number">+48 74 265 2525</span>
+                        <div class="phone-number-wrapper">                            
+                            <span class="phone-number"><span class="glyphicon glyphicon-earphone phone-icon" aria-hidden="true"></span>+48 74 265 2525</span>
                         </div>
                     </div>
                     <div class="col-phone-1 col-xs-12 col-sm-3 col-md-3 social-icons"></div>

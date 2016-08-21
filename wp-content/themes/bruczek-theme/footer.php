@@ -19,7 +19,7 @@
                         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                             <span class="grey glyphicon glyphicon-map-marker phone-icon" aria-hidden="true"></span>
                         </div>
-                        <div class="grey col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <div class="grey col-xs-9 col-sm-10 col-md-10 col-lg-10">
                             <p class="grey">www.bruczek.pl</p>
                             <p class="grey">ul. Kostki brukowej 123</p>
                             <p class="grey">22-361 Warszawa</p>
@@ -30,7 +30,7 @@
                         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
                             <span class="grey glyphicon glyphicon-earphone phone-icon" aria-hidden="true"></span>
                         </div>
-                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <div class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
                             <p class="grey">123 123 3123</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
     </div>
     <div class="container-fluid">
         <div class="row light-gray">
-            <div class="col-xs-offset-4 col-xs-4 col-sm-offset-5 col-sm-3 col-md-offset-5 col-md-3 trade-mark">
+            <div class="col-xs-offset-4 col-xs-4 col-sm-offset-5 col-sm-3 col-md-offset-5 col-md-3 col-lg-2 trade-mark">
                 <p>&#9400; 2016 www.bruczek.pl</p>
             </div>
         </div>

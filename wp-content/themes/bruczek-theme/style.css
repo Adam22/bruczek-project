@@ -7701,9 +7701,9 @@ a:focus {
 
 .box-header {
   border-bottom: 2px solid #75A631;
-  padding-bottom: 32px;
   padding-left: 10px;
   text-align: left;
+  min-height: 115px;
 }
 
 .article-header {
