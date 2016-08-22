@@ -12,10 +12,22 @@ $icon-font-path: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 @function font-path($path) {
   @return $path;
 }
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
 
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-body{min-width: 300px; width: 100%}
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -86,6 +98,9 @@ a:focus{
         box-shadow: 0px 0px 0px 1px white;
     }
 }
+.container-fluid .jumbotron{
+    border-radius: 0;
+}
 .button-icon{
     padding-right: 12px;
     color: #444444;
@@ -148,7 +163,7 @@ img.box-thumbnail {
     .banner > h1 {
         font-size: 36px;        
     }
-        .front-box p{
+    .front-box p{
         font-size: 14px;
     }
 }
@@ -177,9 +192,6 @@ img.box-thumbnail {
     .content-baner{
         float: left;
         width: 100%;
-    }
-    .container-fluid .jumbotron{
-        border-radius: 0;
     }
     .banner > h1 {
         font-size: 36px;        

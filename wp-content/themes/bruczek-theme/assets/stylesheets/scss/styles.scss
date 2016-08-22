@@ -68,6 +68,9 @@ a:focus{
         box-shadow: 0px 0px 0px 1px white;
     }
 }
+.container-fluid .jumbotron{
+    border-radius: 0;
+}
 .button-icon{
     padding-right: 12px;
     color: #444444;
@@ -130,7 +133,7 @@ img.box-thumbnail {
     .banner > h1 {
         font-size: 36px;        
     }
-        .front-box p{
+    .front-box p{
         font-size: 14px;
     }
 }
@@ -159,9 +162,6 @@ img.box-thumbnail {
     .content-baner{
         float: left;
         width: 100%;
-    }
-    .container-fluid .jumbotron{
-        border-radius: 0;
     }
     .banner > h1 {
         font-size: 36px;        

@@ -26,22 +26,23 @@
         <div class="container-fluid">
             <div class="header-content-wrapper">
                 <div class="row">
-                    <div class="col-phone-1 col-xs-3 col-sm-2 col-md-2">
+                    <div class="col-mobile col-xs-3 col-sm-2 col-md-2">
                         <div class="logo-wrapper">
                             <?php bruczek_theme_the_custom_logo(); ?>
                         </div>
                     </div>
-                    <div class="col-phone-1 col-xs-5 col-sm-4 col-md-4">
+                    <div class="col-mobile col-xs-5 col-sm-4 col-md-4">
                         <div class="site-title-wrapper">
                             <span class="site-title"><?php bloginfo( 'name' );?></span>
                         </div>
                     </div>
-                    <div class="col-phone-1 col-xs-4 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
-                        <div class="phone-number-wrapper">                            
-                            <span class="phone-number"><span class="glyphicon glyphicon-earphone phone-icon" aria-hidden="true"></span>+48 74 265 2525</span>
+                    <div class="col-mobile col-xs-4 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
+                        <div class="phone-number-wrapper">
+                            <span class="glyphicon glyphicon-earphone phone-icon" aria-hidden="true"></span>
+                            <span class="phone-number">+48 74 265 2525</span>
                         </div>
                     </div>
-                    <div class="col-phone-1 col-xs-12 col-sm-3 col-md-3 social-icons"></div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 social-icons"></div>
                 </div>
             </div>
         </div>
