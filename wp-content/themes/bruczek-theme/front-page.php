@@ -24,7 +24,7 @@
                     $front_box->the_post();
         ?>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 front-box">
-                        <?php the_title( '<h1 class="box-header">', '</h1>' ); ?>
+                        <?php the_title( '<h3 class="box-header">', '</h3>' ); ?>
                         <?php the_post_thumbnail('front-page-box-thumb', array('class' => 'img-responsive box-thumbnail img-thumbnail')); ?>
                         <p><?php the_excerpt(); ?></p>
                     </div>
