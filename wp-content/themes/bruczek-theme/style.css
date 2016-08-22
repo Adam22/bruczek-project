@@ -7822,6 +7822,11 @@ img.box-thumbnail {
     padding-right: 5%;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .box-header {
+    font-size: 32px;
+  }
+}
 @media (min-width: 480px) and (max-width: 768px) {
   .front-boxes-wrapper .front-box img {
     width: 370px;

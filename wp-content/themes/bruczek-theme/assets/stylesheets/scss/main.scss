@@ -210,6 +210,12 @@ img.box-thumbnail {
     }
 }
 
+@media (min-width: $screen-sm) and (max-width: $screen-md){
+    .box-header{
+        font-size: 32px;
+    }
+}
+
 @media (min-width: $screen-xs) and (max-width: $screen-sm){
     .front-boxes-wrapper .front-box img{
         width: 370px;
