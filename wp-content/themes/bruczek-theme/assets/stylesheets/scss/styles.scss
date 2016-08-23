@@ -17,9 +17,11 @@ a:focus{
     outline: 0px auto -webkit-focus-ring-color;
 }
 .banner{
-    padding: 40px 0;
-    background-image: url($jumbotron-background-image);
-    box-sizing: border-box
+    padding: 40px 0;   
+    box-sizing: border-box;    
+    background: linear-gradient(       
+        rgba(0, 0, 0, 0.7),        
+        rgba(0, 0, 0, 0.7)     ), url(http://napierala-bruk.pl/wp-content/uploads/2014/04/437214_kamni_bruschatka_mostovaya_6666x4944_www.GdeFon.ruaaa_.jpg)       
 }
 .text-baner{
     min-width: 320px;
