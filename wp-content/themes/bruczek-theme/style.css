@@ -1409,7 +1409,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -6571,7 +6571,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6693,7 +6693,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7474,6 +7474,7 @@ and open the template in the editor.
   }
   .phone-number-wrapper span {
     font-size: 14px;
+    padding-right: 3px;
   }
 
   .site-title-wrapper {
@@ -7492,14 +7493,15 @@ and open the template in the editor.
     margin-top: 55px;
   }
   .phone-number-wrapper span {
-    font-size: 12px;
+    font-size: 14px;
+    padding-right: 3px;
   }
 
   .site-title-wrapper {
     margin-top: 78px;
   }
   .site-title-wrapper span {
-    font-size: 26px;
+    font-size: 33px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -7508,6 +7510,7 @@ and open the template in the editor.
   }
   .phone-number-wrapper span {
     font-size: 16px;
+    padding-right: 3px;
   }
 
   .site-title-wrapper {
@@ -7523,13 +7526,14 @@ and open the template in the editor.
   }
   .phone-number-wrapper span {
     font-size: 16px;
+    padding-right: 4px;
   }
 
   .site-title-wrapper {
     margin-top: 78px;
   }
   .site-title-wrapper span {
-    font-size: 34px;
+    font-size: 36px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7558,13 +7562,14 @@ and open the template in the editor.
   }
   .phone-number-wrapper span {
     font-size: 16px;
+    padding-right: 6px;
   }
 
   .site-title-wrapper {
     margin-top: 78px;
   }
   .site-title-wrapper span {
-    font-size: 34px;
+    font-size: 42px;
   }
 }
 /*
@@ -7656,6 +7661,21 @@ a:focus {
 .article-header {
   border-left: 4px solid #75A631;
   padding-left: 15px;
+}
+
+.post-content p {
+  float: left;
+  width: 100%;
+}
+
+.more-btn {
+  float: right;
+  margin-top: 15px;
+  color: white;
+}
+.more-btn:hover {
+  background-color: #669352;
+  box-shadow: 0px 0px 0px 1px white;
 }
 
 .button-grey {
@@ -7864,6 +7884,14 @@ img.box-thumbnail {
 
   .front-box p {
     font-size: 17px;
+  }
+
+  .phone-number-wrapper {
+    padding-bottom: 10px;
+  }
+
+  .banner {
+    padding: 15px 0;
   }
 }
 

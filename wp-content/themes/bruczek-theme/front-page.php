@@ -61,7 +61,7 @@
         ?>
                     <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
                         <?php the_title( '<h1 class="article-header">', '</h1>' ); ?>
-                        <div class='post-content'><?php the_content() ?></div>                    
+                        <div class='post-content'><?php the_content('Więcej', TRUE) ?></div>                    
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
                         <?php the_post_thumbnail('front-page-box-thumb', array('class' => 'img-responsive img-thumbnail box-thumbnail')); ?>

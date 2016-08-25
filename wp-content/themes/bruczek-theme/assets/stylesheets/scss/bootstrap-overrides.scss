@@ -12,6 +12,9 @@ $icon-font-path: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 @function font-path($path) {
   @return $path;
 }
+
+$font-family-base: 'Open Sans', sans-serif !default;
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),

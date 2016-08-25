@@ -137,6 +137,15 @@ add_theme_support( 'custom-logo', array(
 );
 
 /**
+ * Modify the ready more link text.
+ * usedin the_content function
+ */
+function modify_read_more_link() {
+    return '<a class="more-link btn btn-default btn-lg button-grey more-btn" href="' . get_permalink() . '">Więcej</a>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
+/**
  * Filter the except length to 20 characters.
  *
  * @param int $length Excerpt length.
