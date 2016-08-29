@@ -110,13 +110,16 @@ and open the template in the editor.
         }
     }
     .site-title-wrapper {
-        text-align: center;
+        text-align: center; 
         span{
             font-size: 26px;       
         }
     }
-    .col-mobile{
+    .col-mobile{ 
         width: 100%;
+    }
+    .contact-info p{
+        text-align: center;
     }
 }
 
@@ -165,6 +168,11 @@ and open the template in the editor.
         }
     }
 }
+@media screen and (max-width: $screen-sm){
+    .contact-info p{
+        text-align: center;
+    }
+}
 @media screen and (min-width: $screen-lg){
     .header-content-wrapper {
         width: 1170px;
@@ -190,9 +198,9 @@ and open the template in the editor.
         }
     }
     .site-title-wrapper {
-        margin-top: 78px;
+        margin-top: 66px;
         span{
-            font-size: 42px;       
+            font-size: 48px;       
         }
     }
 }

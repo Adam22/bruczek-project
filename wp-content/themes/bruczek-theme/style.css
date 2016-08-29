@@ -7488,6 +7488,10 @@ and open the template in the editor.
   .col-mobile {
     width: 100%;
   }
+
+  .contact-info p {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 480px) {
   .phone-number-wrapper {
@@ -7537,6 +7541,11 @@ and open the template in the editor.
     font-size: 36px;
   }
 }
+@media screen and (max-width: 768px) {
+  .contact-info p {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header-content-wrapper {
     width: 1170px;
@@ -7567,10 +7576,10 @@ and open the template in the editor.
   }
 
   .site-title-wrapper {
-    margin-top: 78px;
+    margin-top: 66px;
   }
   .site-title-wrapper span {
-    font-size: 42px;
+    font-size: 48px;
   }
 }
 /*
