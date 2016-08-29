@@ -125,6 +125,36 @@ img.box-thumbnail {
 .front-article-wrapper div post-content p {
     font-size: 17px;
 }
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.contact-header h1{  
+    position: relative;
+    text-align: center;
+    margin-top: 50px;    
+    &:after{ 
+        display: block;
+        content: '';
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto;
+        height: 1px;
+        background-color: $active-menu-item;
+        margin-bottom: 8px;
+    }
+}
+.contact-info h3{
+    margin-top: 10px;
+}
+#post-12{
+    margin-bottom: 45px;
+}
 @media screen and (min-width: $screen-lg){
     #metaslider_26 .slides > li > img{
         max-height: 430px;

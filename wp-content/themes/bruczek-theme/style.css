@@ -1409,7 +1409,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -6571,7 +6571,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6693,7 +6693,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7435,6 +7435,7 @@ and open the template in the editor.
 
 .navbar-default .navbar-nav > li > a {
   color: #abaaaa;
+  font-size: large;
 }
 .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
@@ -7751,6 +7752,42 @@ img.box-thumbnail {
 
 .front-article-wrapper div post-content p {
   font-size: 17px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.contact-header h1 {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+.contact-header h1:after {
+  display: block;
+  content: '';
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #669352;
+  margin-bottom: 8px;
+}
+
+.contact-info h3 {
+  margin-top: 10px;
+}
+
+#post-12 {
+  margin-bottom: 45px;
 }
 
 @media screen and (min-width: 1200px) {
