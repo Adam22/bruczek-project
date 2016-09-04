@@ -157,13 +157,15 @@ img.box-thumbnail {
 }
 .contact-form-wrapper{
     margin-bottom: 45px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
-#wpcf7-f125-o1{
-    width: 50%;
+.contact-form-wrapper .wpcf7{
     margin: 0 auto;
     .wpcf7-form{
         p{
             label{
+                text-align: center;
                 width:100%;
                 .wpcf7-form-control{
                     width: 100%;
@@ -171,6 +173,42 @@ img.box-thumbnail {
             } 
         }
     }
+}
+div.wpcf7-validation-errors{
+    border: 2px solid $main-menu-item-text-color;
+}
+.g-recaptcha.wpcf7-recaptcha div{
+    margin: 0 auto;
+}
+.wpcf7-form .wpcf7-submit{
+    margin: 0 auto;
+    -webkit-appearance: none;
+    background:#223445;
+    color:#FFFFFF ;
+    border: 1px solid #223445;
+    border-radius: 18px;
+    -moz-border-radius: 5px;
+    display:inline-block;
+    width: 20em;
+    height: 5em;
+    -webkit-font-smoothing: antialiased;
+}
+input[type=text], input[type=email], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
 }
 
 @media screen and (min-width: $screen-lg){

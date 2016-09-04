@@ -6,18 +6,18 @@
 <?php get_header(); ?>
 
 <div class="container-fluid">
-    <div class="row content-wrapper">
+    <div class="content-wrapper">
+        <div class="row">
+            <?php
+            while (have_posts()) : the_post();
 
-        <?php
-        while (have_posts()) : the_post();
-
-            get_template_part('template-parts/content', 'contact');
-        endwhile; // End of the loop.
-        ?>
-
-    </div>
-    <div class="row contact-form-wrapper">
-        <?php echo do_shortcode('[contact-form-7 id="125" title="Formularz Kontaktowy"]'); ?>
+                get_template_part('template-parts/content', 'contact');
+            endwhile; // End of the loop.
+            ?>
+        </div>
+        <div class="row contact-form-wrapper">
+            <?php echo do_shortcode('[contact-form-7 id="125" title="Formularz Kontaktowy"]'); ?>
+        </div>
     </div>
 </div>
 <div class="map-wrapper">
