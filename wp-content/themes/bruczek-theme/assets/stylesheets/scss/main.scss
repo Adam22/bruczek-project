@@ -24,6 +24,7 @@ only screen and (min-device-pixel-ratio: 1.5){
     body{
         width:100%;
         overflow-x:hidden;
+        -webkit-font-smoothing: antialiased;
     }
 }
 
@@ -188,7 +189,7 @@ img.box-thumbnail {
     margin-bottom: 45px;
 }
 .contact-form-wrapper{
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -213,17 +214,22 @@ div.wpcf7-validation-errors{
     margin: 0 auto;
 }
 .wpcf7-form .wpcf7-submit{
+    display: block;
     margin: 0 auto;
     -webkit-appearance: none;
-    background:#223445;
-    color:#FFFFFF ;
-    border: 1px solid #223445;
-    border-radius: 18px;
-    -moz-border-radius: 5px;
-    display:inline-block;
-    width: 20em;
-    height: 5em;
-    -webkit-font-smoothing: antialiased;
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 1.33;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    background-color: $active-menu-item;
+    color: white;
+}
+.wpcf7-form p:last-of-type{
+    margin-top: 25px;
 }
 input[type=text], input[type=email], textarea {
     -webkit-transition: all 0.30s ease-in-out;
