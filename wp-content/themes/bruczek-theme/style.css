@@ -7799,6 +7799,21 @@ img.box-thumbnail {
   margin-bottom: 45px;
 }
 
+.contact-form-wrapper {
+  margin-bottom: 45px;
+}
+
+#wpcf7-f125-o1 {
+  width: 50%;
+  margin: 0 auto;
+}
+#wpcf7-f125-o1 .wpcf7-form p label {
+  width: 100%;
+}
+#wpcf7-f125-o1 .wpcf7-form p label .wpcf7-form-control {
+  width: 100%;
+}
+
 @media screen and (min-width: 1200px) {
   #metaslider_26 .slides > li > img {
     max-height: 430px;
