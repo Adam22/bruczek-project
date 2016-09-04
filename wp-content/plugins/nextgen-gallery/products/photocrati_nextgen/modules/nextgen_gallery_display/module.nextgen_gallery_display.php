@@ -22,7 +22,7 @@ class M_Gallery_Display extends C_Base_Module
 			'photocrati-nextgen_gallery_display',
 			'Gallery Display',
 			'Provides the ability to display gallery of images',
-			'0.14',
+			'0.13',
 			'https://www.imagely.com',
 			'Photocrati Media',
 			'https://www.imagely.com'
