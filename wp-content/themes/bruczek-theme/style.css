@@ -7863,6 +7863,10 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   border: 1px solid #51cbee;
 }
 
+.content-area {
+  margin-bottom: 100px;
+}
+
 @media screen and (min-width: 1200px) {
   #metaslider_26 .slides > li > img {
     max-height: 430px;

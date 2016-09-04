@@ -15,7 +15,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<div id="main" class="content-wrapper site-main" role="main">
 
 		<?php
 		if ( have_posts() ) :
@@ -27,9 +27,10 @@ get_header(); ?>
 
 			<?php
 			endif;
-
+                        $front_box_args = array('cat' => 4);
+                        $front_box = new WP_Query($front_box_args);
 			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			while ( $front_box->have_posts() ) : $front_box->the_post();
 
 				/*
 				 * Include the Post-Format-specific template for the content.
@@ -48,7 +49,7 @@ get_header(); ?>
 
 		endif; ?>
 
-		</main><!-- #main -->
+		</div><!-- #main -->
 	</div><!-- #primary -->
 
 <?php

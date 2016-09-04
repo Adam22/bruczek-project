@@ -216,6 +216,10 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     border: 1px solid rgba(81, 203, 238, 1);
 }
 
+.content-area{
+    margin-bottom: 100px;
+}
+
 @media screen and (min-width: $screen-lg){
     #metaslider_26 .slides > li > img{
         max-height: 430px;
