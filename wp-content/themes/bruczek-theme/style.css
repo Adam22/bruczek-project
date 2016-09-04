@@ -7983,6 +7983,11 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   .front-article-wrapper post-content p {
     font-size: 17px;
   }
+
+  .contact-form-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 @media screen and (max-width: 480px) {
   .metaslider .slides img {
@@ -8003,6 +8008,11 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
   .banner {
     padding: 15px 0;
+  }
+
+  .contact-form-wrapper {
+    margin-left: 3%;
+    margin-right: 3%;
   }
 }
 
