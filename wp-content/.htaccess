@@ -1,0 +1,12 @@
+  GNU nano 2.2.6                     File: .htaccess                                        Modified  
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteBase /wp-content/ 
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*) http://adtumi.ayz.pl/bruczek/wp-content/$1 [L,P]
+
+</IfModule>
+
