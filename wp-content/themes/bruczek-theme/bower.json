@@ -17,10 +17,13 @@
   ],
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
-    "jquery": "^2.2.0"
+    "jquery": "^2.2.0",
+    "jquery-1.9.1": "http://code.jquery.com/jquery-1.11.1.js"
+    
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
-    "jquery": "2.2.4"
+    "jquery": "2.2.4",
+    "jquery-1.9.1": "http://code.jquery.com/jquery-1.11.1.js"
   }
 }

@@ -16,6 +16,7 @@
             ?>
         </div>
         <div class="row contact-form-wrapper">
+            <h2 class="form-header text-center">Formularz Kontaktowy</h2>
             <?php echo do_shortcode('[contact-form-7 id="125" title="Formularz Kontaktowy"]'); ?>
         </div>
     </div>

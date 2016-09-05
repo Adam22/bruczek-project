@@ -7776,12 +7776,12 @@ img.box-thumbnail {
   text-align: right;
 }
 
-.contact-header h1 {
+.entry-header h1, .form-header, .page-title {
   position: relative;
   text-align: center;
   margin-top: 50px;
 }
-.contact-header h1:after {
+.entry-header h1:after, .form-header:after, .page-title:after {
   display: block;
   content: '';
   max-width: 250px;
@@ -7797,7 +7797,7 @@ img.box-thumbnail {
 }
 
 #post-12 {
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 
 .contact-form-wrapper {
@@ -7865,6 +7865,15 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 .content-area {
   margin-bottom: 100px;
+}
+
+.ngg-albumoverview {
+  margin: 0 auto;
+  margin-top: 45px !important;
+  margin-bottom: 45px !important;
+}
+.ngg-albumoverview .ngg-album-compact {
+  padding: 0 12px 4px 20px !important;
 }
 
 @media screen and (min-width: 1200px) {

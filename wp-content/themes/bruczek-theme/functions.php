@@ -123,6 +123,7 @@ function bower_enqueue_assets() {
     // bower:js
     wp_enqueue_script('jquery-js',get_stylesheet_directory_uri() . '/bower_components/jquery/dist/jquery.js');
     wp_enqueue_script('bootstrap-js',get_stylesheet_directory_uri() . '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js');
+    wp_enqueue_script('index-js',get_stylesheet_directory_uri() . '/bower_components/jquery-1.9.1/index.js');
     // endbower
 }
 add_action('wp_enqueue_scripts', 'bower_enqueue_assets');
