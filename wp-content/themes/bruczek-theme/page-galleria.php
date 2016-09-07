@@ -6,7 +6,7 @@
 <?php get_header(); ?>
 
 <div class="container-fluid">
-    <div class="row content-wrapper">
+    <div class="content-wrapper">
 
         <?php
         while (have_posts()) : the_post();

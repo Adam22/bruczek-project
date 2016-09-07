@@ -44,7 +44,7 @@ and open the template in the editor.
 @import "partials/bruczek-variables";
 @import "partials/header";
 @import "partials/footer";
-
+@import "partials/news";
 
 a:focus{
     outline: 0px auto -webkit-focus-ring-color;
@@ -258,10 +258,12 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     margin-top: 45px !important;
     margin-bottom: 45px !important;
     .ngg-album-compact{
-        padding: 0 12px 4px 20px !important;
+        padding: 0 12px 4px 13px !important; 
     }
 }
-
+.album-wrapper{
+    
+}
 @media screen and (min-width: $screen-lg){
     #metaslider_26 .slides > li > img{
         max-height: 430px;

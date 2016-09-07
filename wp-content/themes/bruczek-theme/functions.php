@@ -64,7 +64,8 @@ function bruczek_theme_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
-        add_image_size( 'front-page-box-thumb', 369, 369, true );        
+        add_image_size( 'front-page-box-thumb', 369, 369, true );
+        add_image_size( 'news-post-thumbnail', 250, 250, true ); 
 }
 endif;
 add_action( 'after_setup_theme', 'bruczek_theme_setup' );

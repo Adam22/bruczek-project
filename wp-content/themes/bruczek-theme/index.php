@@ -11,46 +11,49 @@
  *
  * @package bruczek-theme
  */
+get_header();
+?>
 
-get_header(); ?>
+<div id="primary" class="content-area">
+    <div id="main" class="content-wrapper site-main" role="main">
 
-	<div id="primary" class="content-area">
-		<div id="main" class="content-wrapper site-main" role="main">
+        <?php
+        if (have_posts()) :
 
-		<?php
-		if ( have_posts() ) :
+            if (is_home() && !is_front_page()) :
+                ?>
+                <header>
+                    <h1 class="page-title screen-reader-text text-center"><?php single_post_title(); ?></h1>
+                </header>
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text text-center"><?php single_post_title(); ?></h1>
-				</header>
+                <?php
+            endif;
+            $front_box_args = array('cat' => 4);
+            $front_box = new WP_Query($front_box_args);
+            /* Start the Loop */
+            ?>
+        <div class="news-post-wrapper">
+                <?php while ($front_box->have_posts()) : $front_box->the_post();
+                    ?>
+                    <div class="row news-post">
+                        <?php get_template_part('template-parts/content', get_post_format()); ?>
+                    </div>
+                    <?php
+                endwhile;
+                ?>
+            </div>
+            <?php
+            the_posts_navigation();
 
-			<?php
-			endif;
-                        $front_box_args = array('cat' => 4);
-                        $front_box = new WP_Query($front_box_args);
-			/* Start the Loop */
-			while ( $front_box->have_posts() ) : $front_box->the_post();
+        else :
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+            get_template_part('template-parts/content', 'none');
 
-			endwhile;
+        endif;
+        ?>
 
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</div><!-- #main -->
-	</div><!-- #primary -->
+    </div><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 get_sidebar();
