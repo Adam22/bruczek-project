@@ -138,6 +138,21 @@ and open the template in the editor.
         }
     }
 }
+@media all and (max-width: $screen-xs) and (min-width: $screen-xs){
+    .phone-number-wrapper {
+        margin-top: 0px;        
+        span{
+            font-size: 14px;
+            padding-right: 3px;
+        }
+    }
+    .site-title-wrapper {        
+        margin-top: 0px;        
+        span{
+            font-size: 33px;       
+        }
+    }
+}
 @media screen and (min-width: $screen-sm) {
     .phone-number-wrapper {
         margin-top: 55px;        
