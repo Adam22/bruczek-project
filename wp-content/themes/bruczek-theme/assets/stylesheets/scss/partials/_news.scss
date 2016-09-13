@@ -28,19 +28,34 @@ and open the template in the editor.
     margin-top: 2px;
     margin-bottom: 15px;
 }
+.news-content{
+    display: -webkit-flex;
+    display: flex;
+}
 .news-post:nth-child(even){
     article{
         .news-content{
-            display: -webkit-flex;
             -webkit-flex-direction: row-reverse;
-            display: flex;
             flex-direction: row-reverse;
         }
     }
 }
 
+.post-thumbnail-wrapper{
+    float: left;
+}
 @media screen and (max-width: $screen-xs){
+    .wp-post-image
+    {
+        min-width: 170px;
+    }
+    .news-content{
+        display: block;
+    }
     .blog-thhumbnail{
-        width: 45%;
+        float: left;
+        display: block;
+        margin-right: 19%;
+        margin-left: 19%;
     }
 }

@@ -28,12 +28,12 @@ get_header();
 
                 <?php
             endif;
-            $front_box_args = array('cat' => 4);
-            $front_box = new WP_Query($front_box_args);
+            $blog_enties_args = array('cat' => 4);
+            $blog_enties = new WP_Query($blog_enties_args);
             /* Start the Loop */
             ?>
         <div class="news-post-wrapper">
-                <?php while ($front_box->have_posts()) : $front_box->the_post();
+                <?php while ($blog_enties->have_posts()) : $blog_enties->the_post();
                     ?>
                     <div class="row news-post">
                         <?php get_template_part('template-parts/content', get_post_format()); ?>

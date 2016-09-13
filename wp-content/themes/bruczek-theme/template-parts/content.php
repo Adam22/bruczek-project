@@ -10,12 +10,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('news-entry'); ?>>
     <div class="entry-content news-content">
-        <div class="col-md-3 col-lg-3">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             <?php the_post_thumbnail('news-post-thumbnail', array('class' => 'img-responsive blog-thhumbnail')); ?>
         </div>
-        <div class="  col-md-9 col-lg-9">
+        <div class="post-thumbnail-wrapper col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <div class="row">
-                <header class="entry-header col-md-12 col-lg-12">
+                <header class="entry-header col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <?php
                     if (is_single()) :
                         the_title('<h1 class="entry-title">', '</h1>');
@@ -24,7 +24,7 @@
                     endif;
                     ?>
                 </header><!-- .entry-header -->
-                <div class="col-md-12 col-lg-12">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <?php
                     the_content(sprintf(
                                     /* translators: %s: Name of current post. */
