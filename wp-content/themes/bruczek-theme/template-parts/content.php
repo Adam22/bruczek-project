@@ -11,9 +11,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('news-entry'); ?>>
     <div class="entry-content news-content">
         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-            <?php the_post_thumbnail('news-post-thumbnail', array('class' => 'img-responsive blog-thhumbnail')); ?>
+            <div class="post-thumbnail-wrapper">
+                <?php the_post_thumbnail('news-post-thumbnail', array('class' => 'img-responsive blog-thhumbnail')); ?>
+            </div>
         </div>
-        <div class="post-thumbnail-wrapper col-xs-12 col-sm-9 col-md-9 col-lg-9">
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <div class="row">
                 <header class="entry-header col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <?php

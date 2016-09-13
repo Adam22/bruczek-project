@@ -43,6 +43,7 @@ and open the template in the editor.
 
 .post-thumbnail-wrapper{
     float: left;
+    width: 100%;
 }
 @media screen and (max-width: $screen-xs){
     .wp-post-image
@@ -53,9 +54,10 @@ and open the template in the editor.
         display: block;
     }
     .blog-thhumbnail{
-        float: left;
         display: block;
-        margin-right: 19%;
-        margin-left: 19%;
+        margin: 4% auto;
+        width: 250px;
+        height: 250px;
+        float: none;
     }
 }

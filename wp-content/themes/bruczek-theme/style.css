@@ -7510,6 +7510,22 @@ and open the template in the editor.
     font-size: 33px;
   }
 }
+@media all and (max-width: 480px) and (min-width: 480px) {
+  .phone-number-wrapper {
+    margin-top: 0px;
+  }
+  .phone-number-wrapper span {
+    font-size: 14px;
+    padding-right: 3px;
+  }
+
+  .site-title-wrapper {
+    margin-top: 0px;
+  }
+  .site-title-wrapper span {
+    font-size: 33px;
+  }
+}
 @media screen and (min-width: 768px) {
   .phone-number-wrapper {
     margin-top: 55px;
@@ -7680,6 +7696,7 @@ and open the template in the editor.
 
 .post-thumbnail-wrapper {
   float: left;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -7692,10 +7709,11 @@ and open the template in the editor.
   }
 
   .blog-thhumbnail {
-    float: left;
     display: block;
-    margin-right: 19%;
-    margin-left: 19%;
+    margin: 4% auto;
+    width: 250px;
+    height: 250px;
+    float: none;
   }
 }
 a:focus {
