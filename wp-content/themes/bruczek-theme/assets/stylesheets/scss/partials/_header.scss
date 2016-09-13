@@ -65,6 +65,7 @@ and open the template in the editor.
 .navbar-default .navbar-nav > li > a {
     color: $main-menu-item-text-color;
     font-size: large;
+    font-weight: 600;
     &:focus {
         color: $header-text-color;
         border-color: transparent;
