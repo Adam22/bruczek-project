@@ -7750,6 +7750,10 @@ a:focus {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.site-title {
+  font-family: "Stone billy";
+}
+
 .content-wrapper {
   margin: 0;
   padding: 0;
@@ -8158,6 +8162,10 @@ li.list-element p {
 span.list-number {
   position: absolute;
   display: inline;
+}
+
+#post-6 {
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 480px) {

@@ -34,8 +34,8 @@ a:focus{
     box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.6);
     background: rgba(0, 0, 0, 0.3);     
 }
-.baner-text-wrapper{
-
+.site-title{
+    font-family: "Stone billy";
 }
 
 .content-wrapper {
@@ -398,6 +398,10 @@ span.list-number {
     position: absolute;
     display: inline;
 }
+#post-6{
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: $screen-xs){
     ol.service-list li.list-element {
         position: relative;
