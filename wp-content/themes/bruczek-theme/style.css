@@ -7724,7 +7724,7 @@ a:focus {
 .banner {
   padding: 40px 0;
   box-sizing: border-box;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(http://static7.depositphotos.com/1050070/713/i/950/depositphotos_7132462-The-old-pavement-stones.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(http://previews.123rf.com/images/brednikov/brednikov0901/brednikov090100002/4136609-Granite-block-pavement-texture-background-Stock-Photo.jpg);
 }
 
 .text-baner {
@@ -7734,6 +7734,9 @@ a:focus {
 
 .banner > h1 {
   color: white;
+  padding: 10px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.6);
 }
 
 .content-wrapper {
@@ -8044,6 +8047,10 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     margin-top: 0;
     padding-right: 5%;
   }
+
+  .banner {
+    padding: 20px 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .box-header {
@@ -8115,6 +8122,46 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 .service-list {
   padding-top: 15px;
   margin-top: 45px;
+}
+
+ol.service-list {
+  color: #ccc;
+  list-style-type: none;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+ol.service-list li.list-element {
+  position: relative;
+  font: bold italic 20px/1.5 Helvetica, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+li.list-element p {
+  font: 15px/1.5 Helvetica, sans-serif;
+  padding-left: 30px;
+  color: #555;
+  display: inline;
+}
+
+span.list-number {
+  position: absolute;
+  display: inline;
+}
+
+@media screen and (max-width: 480px) {
+  ol.service-list li.list-element {
+    position: relative;
+    font: bold italic 15px/1.5 Helvetica, Verdana, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  li.list-element p {
+    font: 15px/1.5 Helvetica, sans-serif;
+    padding-left: 10px;
+    color: #555;
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

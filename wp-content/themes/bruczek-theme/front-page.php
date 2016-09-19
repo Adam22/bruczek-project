@@ -11,7 +11,9 @@
 <?php if (is_home() || is_front_page()) { echo do_shortcode("[metaslider id=26]"); }?>
 <div class="container-fluid">
     <div class="row jumbotron banner">
-        <h1 class="text-baner">Mamy dobrze poukładane</h1>
+
+        <h1 class="text-baner">Mamy <b>dobrze</b> poukładane</h1>
+
     </div>
     <div class="row content-wrapper">
         <?php 
