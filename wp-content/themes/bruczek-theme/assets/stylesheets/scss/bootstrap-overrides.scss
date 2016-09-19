@@ -9,6 +9,15 @@ and open the template in the editor.
 */
 $font-family-base: 'Open Sans', sans-serif !important;
 $icon-font-path: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/';
+@font-face{
+    font-weight: normal;
+    font-style: normal; 
+    font-family: "Stone billy";
+    src: url("fonts/stonb.ttf") format("truetype");
+}
+.site-title{
+    font-family: "Stone billy";
+}
 
 @function font-path($path) {
     @return $path;
