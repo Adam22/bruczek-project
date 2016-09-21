@@ -7409,6 +7409,10 @@ and open the template in the editor.
   margin: 0 auto;
 }
 
+.sfsiplus_norm_row {
+  width: 90px !important;
+}
+
 .header-content-wrapper {
   position: relative;
 }
@@ -7472,6 +7476,14 @@ and open the template in the editor.
   color: #fff;
 }
 
+.phone-number-wrapper {
+  text-align: right;
+}
+
+.sfsi_plus_holders {
+  height: 45px !important;
+}
+
 @media screen and (max-width: 480px) {
   .navbar-default {
     border-color: transparent;
@@ -7483,11 +7495,18 @@ and open the template in the editor.
   }
 
   .phone-number-wrapper {
-    text-align: center;
+    text-align: right;
+    margin-top: 0px;
   }
   .phone-number-wrapper span {
-    font-size: 14px;
+    font-size: 16px;
     padding-right: 3px;
+    padding-top: 7px;
+  }
+
+  .sfsi_plus_widget {
+    width: 90px;
+    margin: 0 auto;
   }
 
   .site-title-wrapper {
@@ -7505,17 +7524,27 @@ and open the template in the editor.
     text-align: center;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .phone-number-wrapper {
-    margin-top: 55px;
+    margin-top: 10px;
   }
   .phone-number-wrapper span {
     font-size: 14px;
     padding-right: 3px;
   }
 
+  .logo-wrapper {
+    float: right;
+  }
+
+  .sfsi_plus_widget {
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
   .site-title-wrapper {
-    margin-top: 78px;
+    margin-top: 40px;
   }
   .site-title-wrapper span {
     font-size: 33px;
@@ -7542,15 +7571,21 @@ and open the template in the editor.
     margin-top: 55px;
   }
   .phone-number-wrapper span {
-    font-size: 16px;
+    font-size: 14px;
     padding-right: 3px;
   }
 
+  .sfsi_plus_widget {
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
   .site-title-wrapper {
-    margin-top: 78px;
+    margin-top: 46px;
   }
   .site-title-wrapper span {
-    font-size: 34px;
+    font-size: 31px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -7563,10 +7598,10 @@ and open the template in the editor.
   }
 
   .site-title-wrapper {
-    margin-top: 78px;
+    margin-top: 42px;
   }
   .site-title-wrapper span {
-    font-size: 36px;
+    font-size: 41px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -7595,8 +7630,13 @@ and open the template in the editor.
     padding-left: 10%;
   }
 
+  .sfsi_plus_widget {
+    margin-top: 42px;
+  }
+
   .phone-number-wrapper {
     margin-top: 55px;
+    text-align: right;
   }
   .phone-number-wrapper span {
     font-size: 16px;
@@ -7604,7 +7644,7 @@ and open the template in the editor.
   }
 
   .site-title-wrapper {
-    margin-top: 66px;
+    margin-top: 33px;
   }
   .site-title-wrapper span {
     font-size: 48px;

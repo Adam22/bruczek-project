@@ -26,7 +26,9 @@ and open the template in the editor.
         margin: 0 auto;
     }
 }
-
+.sfsiplus_norm_row{
+    width: 90px !important;
+}
 .header-content-wrapper {
     position: relative;
 }
@@ -95,6 +97,12 @@ and open the template in the editor.
     color: $header-text-color;
 }
 
+.phone-number-wrapper{
+    text-align: right;
+}
+.sfsi_plus_holders{
+    height: 45px !important;
+}
 @media screen and (max-width: $screen-xs) {
     .navbar-default{
         border-color: transparent;
@@ -104,11 +112,17 @@ and open the template in the editor.
         font-size: 20px;
     }
     .phone-number-wrapper {
-        text-align: center;
+        text-align: right;
+        margin-top: 0px;
         span{
-            font-size: 14px;
+            font-size: 16px;
             padding-right: 3px;
+            padding-top: 7px;
         }
+    }
+    .sfsi_plus_widget{
+        width: 90px;
+        margin: 0 auto;
     }
     .site-title-wrapper {
         text-align: center; 
@@ -124,16 +138,24 @@ and open the template in the editor.
     }
 }
 
-@media screen and (min-width: $screen-xs) {
+@media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
     .phone-number-wrapper {
-        margin-top: 55px;        
+        margin-top: 10px;        
         span{
             font-size: 14px;
             padding-right: 3px;
         }
     }
+    .logo-wrapper{
+        float: right;
+    }
+    .sfsi_plus_widget{
+        width: 90px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
     .site-title-wrapper {        
-        margin-top: 78px;        
+        margin-top: 40px;        
         span{
             font-size: 33px;       
         }
@@ -158,14 +180,19 @@ and open the template in the editor.
     .phone-number-wrapper {
         margin-top: 55px;        
         span{
-            font-size: 16px;
+            font-size: 14px;
             padding-right: 3px;
         }
     }
+    .sfsi_plus_widget{
+        width: 90px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
     .site-title-wrapper {
-        margin-top: 78px;
+        margin-top: 46px;
         span{
-            font-size: 34px;       
+            font-size: 31px;       
         }
     }
 }
@@ -178,9 +205,9 @@ and open the template in the editor.
         }
     }
     .site-title-wrapper {
-        margin-top: 78px;
+        margin-top: 42px;
         span{
-            font-size: 36px;       
+            font-size: 41px;       
         }
     }
 }
@@ -206,15 +233,19 @@ and open the template in the editor.
     .navbar-nav{
         padding-left: 10%;
     }
+    .sfsi_plus_widget{
+        margin-top: 42px;
+    }
     .phone-number-wrapper {
-        margin-top: 55px;        
+        margin-top: 55px;  
+        text-align: right;
         span{
             font-size: 16px;
             padding-right: 6px;
         }
     }
     .site-title-wrapper {
-        margin-top: 66px;
+        margin-top: 33px;
         span{
             font-size: 48px;       
         }

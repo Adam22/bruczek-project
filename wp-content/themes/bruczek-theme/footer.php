@@ -42,6 +42,7 @@
                 <div class="col-xs-6 col-sm-4 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4">
                     <h3 class="footer-heading">Znajdź nas w internecie:</h3>
                     <div class="social-icon-wrapper">
+                        <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                     </div>
                 </div>
             </div>
