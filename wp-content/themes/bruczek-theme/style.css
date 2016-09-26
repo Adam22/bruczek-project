@@ -7774,7 +7774,7 @@ a:focus {
 .banner {
   padding: 40px 0;
   box-sizing: border-box;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(http://previews.123rf.com/images/brednikov/brednikov0901/brednikov090100002/4136609-Granite-block-pavement-texture-background-Stock-Photo.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/img/baner1920x320.jpg");
 }
 
 .text-baner {
@@ -7820,6 +7820,7 @@ a:focus {
   float: right;
   margin-top: 15px;
   color: white;
+  background-color: #444444;
 }
 .more-btn:hover {
   background-color: #669352;
@@ -7827,31 +7828,8 @@ a:focus {
   color: white;
 }
 
-.button-grey {
-  background-color: #444444;
-}
-
 .text-white {
   color: #fff;
-}
-
-.jumbotron-buttons {
-  float: right;
-  margin-top: 35px;
-}
-.jumbotron-buttons > button {
-  float: right;
-  height: 45px;
-  box-sizing: border-box;
-}
-
-.jumbo-button {
-  margin: 5px 15px;
-  border: 0;
-}
-.jumbo-button:hover {
-  background-color: #669352;
-  box-shadow: 0px 0px 0px 1px white;
 }
 
 .container-fluid .jumbotron {
@@ -7863,12 +7841,51 @@ a:focus {
   color: #444444;
 }
 
+.white-border {
+  border: 1px solid #ffffff;
+}
+
+.jumbo-content-wrapper {
+  min-height: 250px;
+}
+
+.jumbotron-text {
+  margin-top: 15px;
+}
+.jumbotron-text p {
+  margin: 30px 20px;
+}
+.jumbotron-text h3 {
+  margin-left: 20px;
+}
+
+.jumbotron-buttons {
+  margin-top: 25px;
+}
+.jumbotron-buttons .jumbo-button {
+  font-size: 26px;
+}
+.jumbotron-buttons .jumbo-button span {
+  margin-left: 15px;
+}
+.jumbotron-buttons .row div {
+  float: right;
+  margin: 15px 15px;
+  border-bottom: 1px solid #fff;
+  width: 270px;
+}
+.jumbotron-buttons .row div a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .content-baner {
   float: left;
+  min-height: 350px;
   width: 100%;
   background-repeat: no-repeat;
   margin: 20px 0;
-  background: linear-gradient(rgba(67, 144, 9, 0.7), rgba(67, 144, 9, 0.7)), url("http://napierala-bruk.pl/wp-content/uploads/2014/04/437214_kamni_bruschatka_mostovaya_6666x4944_www.GdeFon.ruaaa_.jpg");
+  background: linear-gradient(rgba(67, 144, 9, 0.7), rgba(67, 144, 9, 0.7)), url("assets/img/jumbotron1920x400.jpg");
   min-height: 230px;
 }
 
