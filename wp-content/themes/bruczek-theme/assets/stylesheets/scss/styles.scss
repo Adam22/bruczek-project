@@ -17,7 +17,10 @@ a:focus{
     outline: 0px auto -webkit-focus-ring-color;
 }
 .banner{
-    padding: 40px 0;   
+    padding: 40px 0;
+    height: 150px;
+    border-bottom: 12px solid #000;
+    border-top:  12px solid #000;
     box-sizing: border-box;    
     background: linear-gradient(       
         rgba(0, 0, 0, 0.7),        
@@ -26,13 +29,12 @@ a:focus{
 .text-baner{
     min-width: 320px;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
 }
 .banner > h1{
     color: white;
-    padding: 10px;
-    border-radius: 1px;
-    box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.6);
-    background: rgba(0, 0, 0, 0.3);     
+    padding: 15px;    
 }
 .site-title{
     font-family: "Stone billy";
@@ -84,9 +86,10 @@ a:focus{
 }
 .jumbo-content-wrapper{
     min-height: 250px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .jumbotron-text{
-    margin-top: 15px;
+    margin-top: 20px;
     p{
         margin: 30px 20px;
     }
@@ -97,7 +100,8 @@ a:focus{
 .jumbotron-buttons{
     margin-top: 25px;
     .jumbo-button{
-        font-size: 26px;        
+        font-size: 24px;      
+        text-transform: uppercase;
         span{
             margin-left: 15px;
         }
@@ -108,6 +112,7 @@ a:focus{
             margin: 15px 15px;
             border-bottom: 1px solid #fff;
             width: 270px;
+            min-height: 70px;
             a:hover{
                 color: #fff;
                 text-decoration: none;
@@ -278,9 +283,6 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
         width: 50%;
         margin: 0 auto;
     }
-    .banner > h1 {
-        font-size: 36px;        
-    }
     .front-box p{
         font-size: 14px;
     }
@@ -292,9 +294,6 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     }
     .container-fluid .jumbotron{
         border-radius: 0;
-    }
-    .banner > h1 {
-        font-size: 36px;        
     }
     .front-box p{
         font-size: 14px;
@@ -310,9 +309,6 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     .content-baner{
         float: left;
         width: 100%;
-    }
-    .banner > h1 {
-        font-size: 36px;        
     }
     .banner{
         padding: 30px 0;
@@ -349,9 +345,6 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     .metaslider .slides img{
         min-height: 310px;
     }
-    .banner > h1 {
-        font-size: 36px;        
-    }
     .front-box p{
         font-size: 20px;
     }
@@ -368,9 +361,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     .metaslider .slides img{
         min-height: 260px;
     }
-    .banner > h1 {
-        font-size: 36px;        
-    }
+
     .front-box p{
         font-size: 17px;
     }
@@ -433,5 +424,78 @@ span.list-number {
         padding-left: 10px;
         color: #555;
         display: inline;
+    }
+}
+
+@media screen and (max-width: $screen-xs){
+    .banner > h1 {
+        font-size: 25px;
+        padding: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .content-baner{
+        background-size: cover;
+    }
+    .content-baner{
+        div{
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    }
+    .jumbotron-buttons{
+        .row{
+            div{
+                width: 100%
+            }
+        }
+    }
+}
+@media (min-width: $screen-xs) and (max-width: $screen-xs){
+    .banner > h1 {
+        padding-top: 15px;
+    }
+}
+@media (min-width: $screen-xs) and (max-width: $screen-sm){
+    .banner > h1 {
+        font-size: 25px;        
+    }
+}
+@media (min-width: $screen-sm) and (max-width: $screen-md){
+    .banner > h1 {
+        font-size: 25px;
+        padding: 7px;
+    }
+}
+@media (min-width: $screen-md){
+    .banner > h1 {
+        font-size: 25px;
+        padding: 7px;
+    }
+}
+@media (min-width: $screen-lg){
+    .banner > h1 {
+        font-size: 35px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 617px){
+    .jumbotron-buttons{
+        .row{
+            display: inline-flex;
+            div{
+                width: 190px;
+            }
+        }
+        .jumbo-button{
+            font-size: 15px;
+        }
+    }
+    .content-baner{
+        div{
+            margin-left: 2px;
+            margin-right: 2px;
+        }
     }
 }

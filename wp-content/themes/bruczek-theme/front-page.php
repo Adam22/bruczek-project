@@ -45,14 +45,14 @@ if (is_home() || is_front_page()) {
     <div class="text-white container white-border jumbo-content-wrapper">
         <div class="row">
             <div class="jumbotron-text text-white col-xs-12 col-sm-6 col-lg-6">
-                <h3>Zapraszamy do rozmowy</h3>
+                <h3>Skontaktuj sie z nami</h3>
                 <p>Masz pytania odnośnie projektu ?</p>
                 <p>Zapraszamy do obejrzenia galerii naszych realizacji.</p>
             </div>
             <div class="jumbotron-buttons col-xs-12 col-sm-6 col-lg-6">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-lg-12"><a href="<?php echo wp_make_link_relative('http://www.bruczek-project.dev/index.php/kontakt/'); ?>"class="text-white jumbo-button">Napisz do nas<span class="glyphicon glyphicon-envelope"></span></a></div>
-                    <div class="col-xs-12 col-sm-12 col-lg-12"><a href="<?php echo wp_make_link_relative('http://www.bruczek-project.dev/index.php/galeria/'); ?>" class="text-white jumbo-button">Przejrzyj<br> nasze projekty<span class="glyphicon glyphicon-search "></span></a></div>                 
+                    <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12"><a href="<?php echo wp_make_link_relative('http://www.bruczek-project.dev/index.php/kontakt/'); ?>"class="text-white jumbo-button">Napisz do nas<span class="glyphicon glyphicon-envelope"></span></a></div>
+                    <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12"><a href="<?php echo wp_make_link_relative('http://www.bruczek-project.dev/index.php/galeria/'); ?>" class="text-white jumbo-button">Przejrzyj<br> nasze projekty<span class="glyphicon glyphicon-search "></span></a></div>                 
                 </div>
             </div>
         </div>
