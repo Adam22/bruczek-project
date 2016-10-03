@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 3, 2016, 10:12:35 PM
+    Author     : adam
+*/
+
+.about-us-wrap{
+    background: url('assets/img/onasback.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
+
+.about-us-content{
+    max-width: 970px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    .row{
+        div{
+            margin-bottom: 30px;
+            p{
+                text-align: center;
+                margin: 10px 60px;
+            }
+        }
+    }
+}
+
+.aubout-us-header{
+    text-transform: uppercase;
+    color: #669352;
+    font-size: 44px;
+}
+
+.comments-area{
+    max-width: 970px;
+    margin: 0 auto;
+    .comment-respond{
+        margin-top: 45px;
+    }
+}
+.comment-reply-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+

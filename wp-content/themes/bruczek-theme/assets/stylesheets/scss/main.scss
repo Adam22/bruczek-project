@@ -54,13 +54,14 @@ and open the template in the editor.
 @import "partials/header";
 @import "partials/footer";
 @import "partials/news";
+@import "partials/about-us";
 
 a:focus{
     outline: 0px auto -webkit-focus-ring-color;
 }
 .banner{
     padding: 40px 0;
-    height: 150px;
+    height: 130px;
     border-bottom: 12px solid #000;
     border-top:  12px solid #000;
     box-sizing: border-box;    
@@ -471,7 +472,7 @@ span.list-number {
 
 @media screen and (max-width: $screen-xs){
     .banner > h1 {
-        font-size: 25px;
+        font-size: 20px;
         padding: 0;
         padding-top: 10px;
         text-align: center;
@@ -506,13 +507,14 @@ span.list-number {
 @media (min-width: $screen-sm) and (max-width: $screen-md){
     .banner > h1 {
         font-size: 25px;
-        padding: 7px;
+        padding: 14px;
     }
 }
 @media (min-width: $screen-md){
     .banner > h1 {
         font-size: 25px;
         padding: 7px;
+        margin-top: 0px;
     }
 }
 @media (min-width: $screen-lg){
@@ -533,6 +535,10 @@ span.list-number {
         .jumbo-button{
             font-size: 15px;
         }
+    }
+    .banner > h1 {
+        font-size: 25px;
+        padding: 7px;
     }
     .content-baner{
         div{
