@@ -17,22 +17,22 @@ get_header();
             ?>
         </div><!-- #main -->
     </div><!-- #primary -->
-    <div class="container-fluid ">
-        <div class="content-wrapper ">
+    <div class="container-fluid">
+        <div class="content-wrapper">
             <?php
-            $comment_args = array('title_reply' => 'Dodaj Komentarz',
+            $comment_args = array('id_form' => 'about-us-form', 'title_reply' => 'Dodaj Komentarz', 'id_submit' => 'form-submit', 'class_submit' => 'submit-about-us',
                 'fields' => apply_filters('comment_form_default_fields', array(
-                    'author' => '<p class="comment-form-author">' . '<label for="author">' . __('Your Good Name') . '</label> ' . ( $req ? '<span>*</span>' : '' ) .
-                    '<input id="author" name="author" type="text" value="' . esc_attr($commenter['comment_author']) . '" size="30"' . $aria_req . ' /></p>',
-                    'email' => '<p class="comment-form-email">' .
-                    '<label for="email">' . __('Your Email Please') . '</label> ' .
+                    'author' => '<div class="comment-form-author form-group">' . '<label for="comment-author">' . __('Podpis') . '</label> ' . ( $req ? '<span>*</span>' : '' ) .
+                    '<input id="comment-author" class="form-control post-comment-form" name="author" type="text" value="' . esc_attr($commenter['comment_author']) . '" size="30"' . $aria_req . ' /></div>',
+                    'email' => '<div class="comment-form-email form-group">' .
+                    '<label for="email">' . __('Email') . '</label> ' .
                     ( $req ? '<span>*</span>' : '' ) .
-                    '<input id="email" name="email" type="text" value="' . esc_attr($commenter['comment_author_email']) . '" size="30"' . $aria_req . ' />' . '</p>',
+                    '<input id="comment-email" class="form-control post-comment-form" name="email" type="text" value="' . esc_attr($commenter['comment_author_email']) . '" size="30"' . $aria_req . ' />' . '</div>',
                     'url' => '')),
-                'comment_field' => '<p>' .
-                '<label for="comment">' . __('Let us know what you have to say:') . '</label>' .
-                '<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>' .
-                '</p>',
+                'comment_field' => '<div class="form-group">' .
+                '<label for="post-comment">' . __('Komentarz:') . '</label>' .
+                '<textarea id="post-comment" class="form-control post-comment-form" name="comment" cols="30" rows="8" aria-required="true"></textarea>' .
+                '</div>',
                 'comment_notes_after' => '',
             );
             comment_form($comment_args);
